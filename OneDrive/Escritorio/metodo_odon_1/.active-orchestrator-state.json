@@ -1,0 +1,9 @@
+{
+  "etapas_completadas": [
+    "discovery",
+    "kb-creator",
+    "roadmap-generator",
+    "openspec-init"
+  ],
+  "nota": "Reconstruido manualmente a partir del trabajo realizado; no generado por la herramienta Active Stack."
+}

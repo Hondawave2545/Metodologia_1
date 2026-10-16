@@ -1,0 +1,18 @@
+# Informe de Reflexión Personal: Aplicación de Spec-Driven Development (SDD) en un Sistema Odontológico
+Autora: Yoselie Aquino
+Materia: Metodología I
+Proyecto: Sistema de gestión y turnos odontológicos en Argentina
+1. Declaración del uso de IA
+Para el desarrollo de este trabajo integrador se utilizó asistencia de Inteligencia Artificial (IA) generativa como herramienta de apoyo para la estructuración de la base de conocimiento, la redacción inicial de especificaciones bajo el framework OpenSpec y la asistencia en la depuración de la lógica transaccional en Python. No obstante, todas las decisiones de diseño, la validación empírica de fuentes y la ejecución de pruebas fueron supervisadas, corregidas y validadas de forma personal.
+2. Información incorrecta en el Discovery y contraste de fuentes
+Durante la etapa de investigación de mercado (Discovery), el proceso de contrastación empírica reveló imprecisiones significativas en la información inicial generada por el agente. Específicamente, se detectaron 8 URLs que no pudieron ser corroboradas en los sitios oficiales de las plataformas evaluadas (como Dentalink, AgendaPro, DentalSoft, Dentidesk y ClinIA), lo que obligó a descartarlas o ajustarlas.
+Asimismo, se contrastaron funcionalidades clave: mientras que herramientas como Dentalink se promocionan con formularios de contacto o cotización general (no con recordatorios automatizados directos por WhatsApp), otras como AgendaPro sí evidenciaron planes con WhatsApp y servicios automatizados integrados, aunque no contaban con "facturación electrónica" real sino con simples reportes de facturación. Este ejercicio demostró que la investigación preliminar suele asumir supuestos que deben validarse estrictamente en campo.
+3. El ciclo OPSX y la toma de decisiones: Ajustar vs. Continuar
+Durante el ciclo metodológico, la aplicación del criterio de Ajustar resultó vital en el diseño de las reglas de negocio de la agenda. Inicialmente, el modelo no contemplaba con suficiente rigor el doble bloqueo simultáneo (profesional y sillón/box de atención). Al detectar este bache lógico (que habría provocado solapamientos de turnos en un entorno real), se aplicó el ciclo de ajuste sobre la especificación antes de escribir código. De haber elegido la opción de Continuar ciegamente con la propuesta inicial, el sistema se habría implementado con una falla relacional crítica a nivel transaccional.
+4. Comparativa: Especificación previa vs. Prompt suelto
+La diferencia de trabajar bajo un enfoque estructurado (Spec-Driven Development) frente a tirar un prompt suelto a una IA fue radical.
+ * Con un prompt suelto, el código generado suele ser inmediato pero frágil, sin manejo de errores robusto, sin restricciones relacionales claras en la base de datos y sin pruebas automatizadas reproducibles.
+ * Con la especificación previa y OpenSpec, cada componente (como la prevención de solapamientos) nace de un contrato formal, lo que permitió que al implementar la solución en Python y SQLite, las 18 pruebas automatizadas pasaran con éxito en el primer intento, garantizando un código predecible y mantenible.
+5. Valoración de la Fundación
+ * Lo que aportó más valor: La estructuración de los modelos de datos y las reglas de negocio en la carpeta knowledge-base/. Tener claras las restricciones antes de programar eliminó la ambigüedad y sirvió de ancla inquebrantable para el agente y para el desarrollo posterior.
+ * Lo que aportó menos valor (o mayor fricción): La formalización documental en etapas tempranas donde la arquitectura del dominio aún era volátil, lo que requirió constantes iteraciones de refactorización sobre los documentos de descubrimiento.

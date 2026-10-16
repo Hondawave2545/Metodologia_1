@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Bases de datos locales de prueba
+*.db
+*.sqlite3
+
+# Secretos y entornos
+.env
+.env.*
+*.key
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store
