@@ -1,5 +1,5 @@
 ---
-: "Informe de Discovery: sistemas de gestión de turnos odontológicos en Argentina"
+title: "Informe de Discovery: sistemas de gestión de turnos odontológicos en Argentina"
 ---
 
 # Informe de Discovery
