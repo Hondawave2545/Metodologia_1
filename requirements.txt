@@ -1,0 +1,15 @@
+# Dependencias de la API de turnos (change C-10).
+# Verificadas en Python 3.14.8.
+#
+# El cliente de pruebas es httpx2: starlette 1.10 declara httpx como obsoleto
+# para starlette.testclient y recomienda httpx2. Con httpx2 la suite corre
+# sin avisos de deprecacion.
+
+fastapi==0.162.7
+uvicorn[standard]==0.54.0
+
+# Cliente HTTP para starlette.testclient (pruebas de la API).
+httpx2==2.16.0
+
+# Framework de pruebas.
+pytest==9.2.0

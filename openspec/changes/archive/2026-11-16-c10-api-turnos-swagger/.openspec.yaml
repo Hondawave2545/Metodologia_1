@@ -1,0 +1,4 @@
+schema: spec-driven
+created: 2026-11-10
+goal: Allow team members to demonstrate existing appointment operations over
+  HTTP without implementing authentication or other roadmap features.

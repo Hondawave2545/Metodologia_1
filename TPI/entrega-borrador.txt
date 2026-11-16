@@ -1,0 +1,45 @@
+ENTREGA — TPI METODOLOGÍA I
+Comisión: 3
+Video explicativo: [PENDIENTE — reemplazar por el enlace accesible al video de hasta 10 minutos]
+Repositorio del proyecto: [PENDIENTE — reemplazar por el enlace al repositorio actualizado; hoy el remoto es https://github.com/Hondawave2545/Metodologia_1]
+Cantidad de integrantes: 1
+Integrantes:
+1. [PENDIENTE — Nombre Apellido]
+
+--- NOTAS INTERNAS (eliminar esta sección antes de subir el archivo) ---
+
+1. Archivo sugerido: TPI-C3-<Apellido>.txt (la consigna propone "TPI-C1-Apellido1-Apellido2-Apellido3.txt";
+   acá corresponde TPI con la comisión 3 y un solo apellido).
+
+2. El formato de entrega se conserva el del Parcial 2: un único archivo .txt con el enlace accesible al video,
+   el enlace al repositorio actualizado, la cantidad de integrantes y el nombre y apellido de todos.
+   Subirlo al espacio "Entrega TPI" de la comisión 3.
+
+3. Estado de los campos pendientes:
+   - Video explicativo: falta grabar. Guion actualizado en TPI/guion-video.md (3 changes archivados, skill y
+     MCP con evidencia de uso, demo de las cinco operaciones). Duración máxima 10 minutos.
+   - Repositorio del proyecto: los changes C-10 y C-11 están archivados en OpenSpec y se suben al remoto en el
+     mismo push que este TPI. Verificar el enlace antes de entregar.
+   - Integrante: falta completar nombre y apellido.
+
+4. Verificar ANTES de entregar que el docente puede abrir ambos enlaces sin pedir acceso. No dejar
+   enlaces de ejemplo (https://...) ni campos sin completar.
+
+5. Requisitos de contenido del repositorio para el TPI (consigna, apartado 6): fundación, roadmap actualizado,
+   artefactos SDD, changes archivados, código, tests, la skill propia y la documentación de configuración y
+   uso del MCP. El README.md debe permitir reproducir el alcance presentado: requisitos, instalación,
+   configuración de ejemplo sin secretos, preparación de datos ficticios, arranque del backend y del frontend
+   si corresponde, acceso a Swagger y ejecución de tests, indicando qué está completo y qué queda pendiente.
+   Estado verificado el 2026-11-16: los tres changes archivados (C-05, C-10, C-11), la suite completa con
+   87 pruebas en verde, la skill en .opencode/skills/api-turnos/ con sus dos referencias, el MCP declarado en
+   opencode.json y la evidencia de uso real en TPI/.
+
+6. No incluir claves, tokens ni contraseñas en el repositorio, en la entrega ni en el video.
+   Usar datos ficticios de pacientes y profesionales.
+   Verificado el 2026-11-16 sobre todos los archivos a subir: 0 coincidencias de credenciales y 0 datos
+   personales. El .gitignore cubre *.db, *.sqlite3, .env, .env.* y *.key; las bases de demo y el entorno
+   virtual quedan fuera del repositorio.
+
+7. Lo que queda declarado como pendiente, para no presentarlo como terminado: autenticación y roles,
+   frontend, altas de recursos por API, listados y persistencia de producción; y en el roadmap los changes
+   C-01 a C-04 y C-06 a C-09. Ninguno cuenta como funcionalidad completa.
