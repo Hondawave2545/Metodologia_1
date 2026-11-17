@@ -1,5 +1,5 @@
 ---
-name: API de turnos
+name: api-turnos
 description: Trabajar en la API HTTP de turnos del sistema odontológico (src/api/): agregar o corregir endpoints, esquemas, mapeo de errores, pruebas de la API, script de datos de demostración o pruebas de arranque. Usar esta skill siempre que la tarea toque la API de turnos, Swagger, /docs, /openapi.json, el contrato HTTP de citas, o los tests de FastAPI del repositorio, aunque el usuario no la nombre por su nombre. Respetar el contrato de errores 409/422/404, la semántica de intervalos [inicio, fin) y el ciclo TDD del proyecto.
 ---
 
